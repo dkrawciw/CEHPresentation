@@ -11,8 +11,10 @@ app.use(express.static("public"));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
+http.listen(80, () => {
+  console.log('Web App Up!');
+});
+
 app.get('/', (req, res) => {
   res.render('index.ejs');
 });
-
-io.
