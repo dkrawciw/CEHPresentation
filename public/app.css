@@ -20,6 +20,15 @@ body
     opacity: 0.3;
     z-index: -2;
 }
+.returnDiv table
+{
+  margin: auto;
+}
+.returnDiv td
+{
+  text-align: center;
+  width: 30%;
+}
 
 .bodyHeader
 {
@@ -48,23 +57,104 @@ hr
 {
   color: #F71735;
 }
+.bombeDiv
+{
+  color: #29bf12;
+}
 
 .biography
 {
   height: 50vh;
   width: 70%;
-  margin: auto;
+  margin: 3% auto;
 }
 
 .facts
 {
   width: 50%;
   float: right;
-  border: 4px solid #F71735;
-  height: 100%;
 }
 .enigmaProfile
 {
   border: 4px solid #F71735;
   height: 100%;
+}
+.bombeProfile
+{
+  border: 4px solid #29bf12;
+  height: 100%;
+}
+
+.options
+{
+  background: none;
+  font-family: 'Trispace', sans-serif;
+  border: none;
+  color: white;
+  letter-spacing: 0.5vw;
+  transition: all 0.2s;
+  outline: none;
+  font-size: 3vh;
+}
+.options:hover
+{
+  cursor: pointer;
+  text-shadow: 0.1vw 0.1vh #29bf12;
+}
+.options:active
+{
+  text-shadow: 0.1vw 0.1vh #F71735;
+}
+
+.typeWriter
+{
+  border: 2px solid #F71735;
+}
+.enigmaTypeWriter
+{
+  margin-bottom: 10vh;
+  margin: auto;
+  width: 50%;
+}
+.enigmaTypeWriter table
+{
+  margin: auto;
+}
+.enigmaTypeWriter td
+{
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.dialTable
+{
+  width: 100%;
+}
+.dialTable td
+{
+  width: 30%;
+}
+.dialTable input
+{
+  width: 50%;
+  text-align: center;
+  padding: 2%;
+  background: none;
+  border: 1px solid #F71735;
+  color: #F71735;
+  font-family: 'Trispace', sans-serif;
+}
+
+.codeIO
+{
+  background: none;
+  border: 1px solid #F71735;
+  padding: 1%;
+  color: white;
+  font-family: 'Trispace', sans-serif;
+  transition: all 0.3s;
+  outline: none;
+  width: 70vh;
+  margin: 3vh;
 }

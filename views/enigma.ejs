@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<%- include("partials/return.ejs") %>
+
+<h2 class="bodyHeader enigma">ENIGMA</h2>
+<div class="enigmaDiv">
+  <h2>Arthur Scherbius - Author of ENIGMA</h2>
+
+  <div class="biography">
+    <img src="arthurScherbius.jpg" class="enigmaProfile">
+    <div class="facts enigmaProfile">
+      <ul>
+        <li>German Electrical Engineer</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <hr>
+    <%- include("partials/typeWriter.ejs") %>
+    <input class="codeIO" placeholder="Input" name="decryptedCode" maxlength="40">
+    <br>
+    <input readonly class="codeIO" placeholder="Output">
+    <hr>
+  </div>
+</div>
+<script type="text/javascript" src="typeWriter.js"></script>
+<%- include("partials/footer.ejs") %>

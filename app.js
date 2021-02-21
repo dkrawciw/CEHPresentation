@@ -18,3 +18,30 @@ http.listen(80, () => {
 app.get('/', (req, res) => {
   res.render('index.ejs');
 });
+app.get('/controller', (req, res) => {
+  res.render('controller.ejs');
+});
+
+app.get('/enigma', (req, res) => {
+  res.render('enigma.ejs');
+});
+
+app.get('/bombe', (req, res) => {
+  res.render('bombe.ejs');
+});
+app.get('/lastingeffect', (req, res) =>
+{
+  res.redirect('/');
+  //res.render('lastingeffects.ejs');
+});
+
+app.get('/*', (req, res) => {
+  res.redirect('/');
+});
+
+io.on('connection', (socket) => {
+
+  socket.on('moveTab', (location) => {
+    io.emit('moveTab', location);
+  });
+});
