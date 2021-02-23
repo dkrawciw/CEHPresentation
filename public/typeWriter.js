@@ -1,4 +1,4 @@
-const letters = document.querySelectorAll('.enigmaTypeWriter td'),
+const letters = document.querySelectorAll('.outputTable td'),
       alphabet = "abcdefghijklmnopqrstuvwxyz",
       inp = document.querySelector('.codeIO');
 

@@ -74,8 +74,24 @@ hr
 {
   margin: 2vh;
 }
+.biography table
+{
+  margin: auto;
+  border: 1px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+.biography td
+{
+  border: 1px solid white;
+}
 
-.facts
+.factsL
+{
+  width: 50%;
+  float: left;
+}
+.factsR
 {
   width: 50%;
   float: right;
