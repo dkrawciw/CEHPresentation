@@ -34,6 +34,7 @@ body
 {
   font-family: 'Chonburi', cursive;
   font-size: 10vh;
+  color: white;
 }
 .enigma
 {
@@ -67,6 +68,11 @@ hr
   height: 50vh;
   width: 70%;
   margin: 3% auto;
+  color: white;
+}
+.biography li
+{
+  margin: 2vh;
 }
 
 .facts
@@ -78,6 +84,7 @@ hr
 {
   border: 4px solid #F71735;
   height: 100%;
+  max-width: 34vw;
 }
 .bombeProfile
 {
@@ -172,4 +179,31 @@ hr
 .contollerBtn:active
 {
   border: 5px solid #F71735;
+}
+
+.rotorTableExample table
+{
+  border: 1px solid #F71735;
+  border-collapse: collapse;
+  font-family: 'Trispace', sans-serif;
+  font-size: 20vh;
+  margin: auto;
+}
+.rotorTableExample td
+{
+  padding: 1vh;
+  border: 1px solid #F71735;
+  width: 20vw;
+}
+
+.shiftedLettersExample table
+{
+  margin: auto;
+  font-family: 'Trispace', sans-serif;
+  font-size: 20vh;
+}
+.shiftedLettersExample td
+{
+  padding: 1vh;
+  width: 20vw;
 }

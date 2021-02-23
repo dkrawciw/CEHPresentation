@@ -1,9 +1,11 @@
 <%- include("partials/header.ejs") %>
 <%- include("partials/return.ejs") %>
-
-<h2 class="bodyHeader enigma">ENIGMA</h2>
+<div class="headDiv">
+  <img src="enigmaGermans.jpg">
+  <h2 class="bodyHeader enigma">ENIGMA</h2>
+</div>
 <div class="enigmaDiv">
-  
+
   <h2>Arthur Scherbius - Author of ENIGMA</h2>
 
   <div class="biography">
@@ -14,6 +16,55 @@
       </ul>
     </div>
   </div>
+
+
+  <div>
+    <hr>
+    <h2 class="bodyHeader enigma">Rotors</h2>
+    <div class="biography">
+      <img src="enigmaRotors.jpg" class="enigmaProfile">
+      <div class="facts enigmaProfile">
+        <p>The rotors were used like a more complicated Caesar Cipher. They shifted the character inputed a certain number of times. In the case of the Enigma, the number of times a letter is shifted changes every keystroke.</p>
+        <ul>
+          <li>Rotors increased every keystroke (see example below to get a better idea of how thise is done)</li>
+          <li>They increase like old car odometers</li>
+          <li>For the German Army and Airforce, one Enigma Machine would use three out of five possible rotors</li>
+          <li>Each of the five rotors would mix the matched values they had to make them unique</li>
+        </ul>
+      </div>
+    </div>
+    <%- include("partials/rotors.ejs") %>
+  </div>
+
+  <div>
+    <hr>
+    <h2 class="bodyHeader enigma">Plugboards</h2>
+    <div class="biography">
+      <img src="enigmaPlugboard.jpg" class="enigmaProfile">
+      <div class="facts enigmaProfile">
+        <p>Plugboards simply routed characters to different characters before and after the character goes through the rotors of the Enigma.</p>
+        <ul>
+          <li></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <hr>
+    <h2 class="bodyHeader enigma">Basic Order</h2>
+    <table>
+      <tr>
+        <td>Keyboard</td>
+        <td>Plugboard</td>
+        <td>Rotors</td>
+        <td>Plugboard</td>
+        <td>Lamp Output</td>
+      </tr>
+    </table>
+  </div>
+
   <div>
     <hr>
     <%- include("partials/typeWriter.ejs") %>
@@ -23,5 +74,6 @@
     <hr>
   </div>
 </div>
+<script type="text/javascript" src="rotors.js"></script>
 <script type="text/javascript" src="typeWriter.js"></script>
 <%- include("partials/footer.ejs") %>
