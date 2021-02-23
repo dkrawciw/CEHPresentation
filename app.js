@@ -29,10 +29,9 @@ app.get('/enigma', (req, res) => {
 app.get('/bombe', (req, res) => {
   res.render('bombe.ejs');
 });
-app.get('/lastingeffect', (req, res) =>
+app.get('/worksCited', (req, res) =>
 {
-  res.redirect('/');
-  //res.render('lastingeffects.ejs');
+  res.render('worksCited.ejs');
 });
 
 app.get('/*', (req, res) => {
