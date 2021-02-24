@@ -6,17 +6,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Trispace:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/controller.css">
   </head>
   <body>
-    <div>
-      <button class="contollerBtn options" id="homeBtn">Home Page</button>
+    <div class="headDiv">
+      <img src="enigmaSample.jpg">
+      <h2 class="bodyHeader bombe">BOMBE</h2>
+      <h2>VS</h2>
+      <h2 class="bodyHeader enigma">ENIGMA</h2>
+      <hr>
     </div>
-    <div>
-      <button class="contollerBtn options" id="eBtn">Enigma</button>
-    </div>
-    <div>
-      <button class="contollerBtn options" id="bBtn">Bombe</button>
-    </div>
+    <button class="edAll modBtns options">Enable All</button>
+    <br>
+    <button class="edAll modBtns options">Disable All</button>
+    <br>
+
+    <!-- Enigma portion -->
+    <button class="contollerBtn options headerBtn">ENIGMA</button>
+    <hr>
+    <h2 class="bodyHeader enigma">ENIGMA</h2>
+    <img src="enigmaExample1.jpg" class="controllerImage enigmaImage">
+    <hr>
+    <img src="arthurScherbius.jpg" class="controllerImage enigmaImage">
+    <hr>
+    <img src="enigmaRotors.jpg" class="controllerImage enigmaImage">
+    <hr>
+
+      <%- include("partials/rotors.ejs") %>
+      <button class="modBtns options">Reset</button>
+    <hr>
+
+    <img src="enigmaPlugboard.jpg" class="controllerImage enigmaImage">
+    <hr>
+
+    <img src="enigmaInstructions.jpg" class="controllerImage enigmaImage">
+    <hr>
+
+    <button class="contollerBtn options headerBtn">Demo</button>
+    <br>
+    <img src="enigmaDiagram.jpg" class="steps nigmaImage">
+    <table class="stepDiagram">
+      <tr>
+        <td>Step 1</td>
+        <td>Step 2</td>
+        <td>Step 3</td>
+        <td>Step 4</td>
+        <td>Step 5</td>
+      </tr>
+      <tr>
+        <td style="color: #bf4d92;">Keyboard</td>
+        <td style="color: #19b552;">Plugboard</td>
+        <td style="color: #d8a846;">Rotors</td>
+        <td style="color: #19b552;">Plugboard</td>
+        <td style="color: #4d9ec1;">Lampboard</td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <!-- Bombe portion -->
+    <button class="contollerBtn options headerBtn">BOMBE</button>
+    <hr>
+    <h2 class="bodyHeader bombe">BOMBE</h2>
+    <img src="turing.jpg" class="controllerImageDuo bombeImage">
+
+    <img src="turing.jpg" class="controllerImageDuo bombeImage">
+    <hr>
+
+    <!-- Works Cited Button -->
+    <button class="contollerBtn options headerBtn">WORKS CITED</button>
+    <hr>
     <script type="text/javascript" src="controlling.js"></script>
+    <script type="text/javascript" src="controllerRotors.js"></script>
   </body>
 </html>

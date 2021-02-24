@@ -1,14 +1,24 @@
-const homeBtn = document.querySelector('#homeBtn'),
-      eBtn = document.querySelector('#eBtn'),
-      bBtn = document.querySelector('#bBtn'),
+const controlBtn = document.querySelectorAll('.contollerBtn'),
+      edAll = document.querySelectorAll('.edAll'),
       socket = io();
 
-homeBtn.addEventListener('click', () => {
-  socket.emit('moveTab', '/');
+edAll[0].addEventListener('click', () => {
+  for (var i = 0; i < 3; i++)
+    socket.emit('enable', i, true);
 });
-eBtn.addEventListener('click', () => {
+edAll[1].addEventListener('click', () => {
+  for (var i = 0; i < 3; i++)
+    socket.emit('enable', i, false);
+});
+
+controlBtn[0].addEventListener('click', () => {
+  socket.emit('enable', 0, true);
   socket.emit('moveTab', '/enigma');
 });
-bBtn.addEventListener('click', () => {
+controlBtn[1].addEventListener('click', () => {
+  socket.emit('moveTab', '/enigma#typeWriterLocation');
+});
+controlBtn[2].addEventListener('click', () => {
+  socket.emit('enable', 1, true);
   socket.emit('moveTab', '/bombe');
 });

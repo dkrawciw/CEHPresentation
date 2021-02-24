@@ -181,21 +181,6 @@ hr
   width: 70vh;
   margin: 3vh;
 }
-.contollerBtn
-{
-  border: 5px solid white;
-  padding: 2%;
-  width: 20vw;
-  transition: all 0.2s;
-}
-.contollerBtn:hover
-{
-  border: 5px solid #29bf12;
-}
-.contollerBtn:active
-{
-  border: 5px solid #F71735;
-}
 
 .rotorTableExample table
 {

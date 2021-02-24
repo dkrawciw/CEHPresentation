@@ -1,0 +1,79 @@
+hr
+{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.controllerImage
+{
+  height: 95vh;
+}
+.controllerImageDuo
+{
+  width: 45vw;
+}
+
+.enigmaImage
+{
+  border: 3px solid #F71735;
+}
+.bombeImage
+{
+  border: 3px solid #29bf12;
+}
+
+.contollerBtn
+{
+  border: 5px solid white;
+  padding: 2%;
+  width: 20vw;
+  transition: all 0.2s;
+}
+.contollerBtn:hover
+{
+  border: 5px solid #29bf12;
+}
+.contollerBtn:active
+{
+  border: 5px solid #F71735;
+}
+
+.headerBtn
+{
+  margin: 20vh;
+}
+
+.steps
+{
+  height: 70vh;
+}
+.stepDiagram
+{
+  margin: auto;
+}
+.stepDiagram
+{
+  border-collapse: collapse;
+  border: 1px solid #F71735;
+}
+.stepDiagram td
+{
+  padding: 2%;
+  border: 1px solid #F71735;
+  width: 15vw;
+}
+
+.edAll
+{
+  border: 1px solid white;
+  width: 30vw;
+  padding: 1%;
+  margin: 1%;
+}
+.edAll:hover
+{
+  border: 1px solid #29bf12;
+}
+.edAll:active
+{
+  border: 1px solid #F71735;
+}

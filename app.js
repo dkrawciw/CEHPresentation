@@ -4,6 +4,7 @@ const express = require('express'),
       io = require('socket.io')(http),
       bodyParser = require('body-parser'),
       cookieParser = require('cookie-parser');
+var enables = [false,false,false];
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -23,15 +24,15 @@ app.get('/controller', (req, res) => {
 });
 
 app.get('/enigma', (req, res) => {
-  res.render('enigma.ejs');
+  res.render('enigma.ejs', {enabled: enables[0]});
 });
 
 app.get('/bombe', (req, res) => {
-  res.render('bombe.ejs');
+  res.render('bombe.ejs', {enabled: enables[1]});
 });
 app.get('/worksCited', (req, res) =>
 {
-  res.render('worksCited.ejs');
+  res.render('worksCited.ejs', {enabled: enables[2]});
 });
 
 app.get('/*', (req, res) => {
@@ -40,6 +41,9 @@ app.get('/*', (req, res) => {
 
 io.on('connection', (socket) => {
 
+  socket.on('enable', (pageNum,option) => {
+    enables[pageNum] = option;
+  });
   socket.on('moveTab', (location) => {
     io.emit('moveTab', location);
   });

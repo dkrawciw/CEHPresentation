@@ -5,6 +5,7 @@
   <img src="enigmaGermans.jpg">
   <h2 class="bodyHeader enigma">ENIGMA</h2>
 </div>
+<% if (enabled){ %>
 <div class="enigmaDiv">
 
   <h2>Basics</h2>
@@ -104,7 +105,7 @@
   </div>
 
   <div>
-    <hr>
+    <hr id="typeWriterLocation">
     <%- include("partials/typeWriter.ejs") %>
     <input class="codeIO" placeholder="Input" name="decryptedCode" maxlength="40">
     <br>
@@ -114,4 +115,5 @@
 </div>
 <script type="text/javascript" src="rotors.js"></script>
 <script type="text/javascript" src="typeWriter.js"></script>
+<% } %>
 <%- include("partials/footer.ejs") %>
