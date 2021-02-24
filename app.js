@@ -19,8 +19,16 @@ http.listen(80, () => {
 app.get('/', (req, res) => {
   res.render('index.ejs');
 });
+
 app.get('/controller', (req, res) => {
-  res.render('controller.ejs');
+  if (req.cookies.coolWord == 'superExtraCoolWordThatNoOneWillGuess')
+    res.render('controller.ejs');
+  else
+    res.redirect('/');
+});
+app.get('/bananas', (req, res) => {
+  res.cookie('coolWord', 'superExtraCoolWordThatNoOneWillGuess');
+  res.redirect('/controller');
 });
 
 app.get('/enigma', (req, res) => {

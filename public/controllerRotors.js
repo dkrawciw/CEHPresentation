@@ -5,7 +5,7 @@ const rotors = document.querySelectorAll('.rotorExample'),
 var rotorVal = [0,0,0],
     intervalSpeed = 200;
 
-modBtns[0].addEventListener('click', () => {
+modBtns[2].addEventListener('click', () => {
   for (var i = 0; i < rotorVal.length; i++)
     rotorVal[i] = 0;
   printRotors();
