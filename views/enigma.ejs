@@ -65,8 +65,11 @@
       <div class="factsR enigmaProfile">
         <p>Plugboards simply routed characters to different characters before and after the character goes through the rotors of the Enigma.</p>
         <ul>
-          <li></li>
-
+          <li>a -> b; b -> a</li>
+          <li>The plugboard operation would run twice through the Enigma</li>
+          <li>Once right after a key is pressed, then a second time right before the character reaches the lampboard</li>
+          <li>10 possible pairs of characters could be mached leaving 6 letters on the alphabet not affected by the plugboard</li>
+          <li>The machine didn't need to have any pairs made to work, which complicated things</li>
         </ul>
       </div>
     </div>
@@ -79,10 +82,12 @@
       <img src="enigmaDiagram.jpg" class="enigmaProfile">
       <div class="factsR enigmaProfile">
         <ul>
+          <li style="text-decoration: underline;">The letter shifted would never be the same as the inputed letter</li>
           <li>Rotors used to shift the letter inputed</li>
           <li>Lamp Board Displayed the output of the machine</li>
           <li>Keyboard provided input from a user</li>
           <li>Plugboard paired characters to be switched</li>
+          <li>158,962,555,217,826,360,000 possible ways to set the Enigma machine</li>
         </ul>
         <table>
           <tr>
@@ -107,7 +112,7 @@
   <div>
     <hr id="typeWriterLocation">
     <%- include("partials/typeWriter.ejs") %>
-    <input class="codeIO" placeholder="Input" name="decryptedCode" maxlength="40">
+    <input class="codeIO" placeholder="Input" name="decryptedCode">
     <br>
     <input readonly class="codeIO" placeholder="Output">
     <hr>

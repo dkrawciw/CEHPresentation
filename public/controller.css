@@ -10,6 +10,9 @@ hr
 .controllerImageDuo
 {
   width: 45vw;
+  max-height: 80vh;
+  object-fit: cover;
+  object-position: top;
 }
 
 .enigmaImage

@@ -21,13 +21,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/controller', (req, res) => {
-  if (req.cookies.coolWord == 'superExtraCoolWordThatNoOneWillGuess')
+  if (req.cookies.coolWord == 'superExtraCoolWordThatNoOneWillGuessMaybe')
     res.render('controller.ejs');
   else
     res.redirect('/');
 });
-app.get('/bananas', (req, res) => {
-  res.cookie('coolWord', 'superExtraCoolWordThatNoOneWillGuess');
+app.get('/bananas/oranges', (req, res) => {
+  res.cookie('coolWord', 'superExtraCoolWordThatNoOneWillGuessMaybe');
   res.redirect('/controller');
 });
 

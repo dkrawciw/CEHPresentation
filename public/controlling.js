@@ -22,3 +22,11 @@ controlBtn[2].addEventListener('click', () => {
   socket.emit('enable', 1, true);
   socket.emit('moveTab', '/bombe');
 });
+controlBtn[3].addEventListener('click', () => {
+  socket.emit('enable', 1, true);
+  socket.emit('moveTab', '/bombe#shiftedDemo');
+});
+controlBtn[4].addEventListener('click', () => {
+  socket.emit('enable', 1, true);
+  socket.emit('moveTab', '/worksCited');
+});

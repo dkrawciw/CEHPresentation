@@ -7,35 +7,249 @@
 </div>
 <div class="bombeDiv">
 <% if (enabled){ %>
+  <h2>Marian Rejewski - Cracked the Engima</h2>
+
+  <div class="biography">
+    <img src="marianRejewski.jpg" class="bombeProfile">
+    <div class="factsL bombeProfile">
+      <p>Polish cryptologist Marian Rejewski orignally cracked the Enigma in 1932 with his team at the Polish Cipher Bureau. Unfortunately, with Russian and German preassure from both sides of Poland, progress on mechanizing the Bomba (as it was called in Poland) would have to be given as a task to Great Britain.</p>
+      <ul>
+        <li>Polish</li>
+        <li>Cryptologist</li>
+        <li>Mathemetician</li>
+        <li>Cracked the Enigma in 1932</li>
+      </ul>
+    </div>
+  </div>
+
   <h2>Alan Turing - Author of the BOMBE</h2>
 
   <div class="biography">
     <img src="turing.jpg" class="bombeProfile">
     <div class="factsR bombeProfile">
+      <p>The most well-known member of Bletchley Park is Alan Turing. He was talented in many ways, one of which was problem solving and making machines to do so.</p>
       <ul>
         <li>British</li>
         <li>Cryptographer</li>
         <li>Mathemetician</li>
         <li>Scientist</li>
+        <li>Theoretical Computer Scientist</li>
       </ul>
     </div>
   </div>
 
+  <h2>Gordon Welchman - Co-Author of the BOMBE</h2>
   <div>
     <div class="biography">
-      <img src="turing.jpg" class="bombeProfile">
-      <div class="factsR bombeProfile">
+      <img src="gordonWelchman.jpg" class="bombeProfile">
+      <div class="factsL bombeProfile">
+        <p>Gordon Welchman was next to Alan Turing in his work on the Bombe. His primary role was "traffic analysis" which essentially meant he had to know all about the German whereabouts and messages they send.</p>
         <ul>
-          <li>British</li>
+          <li>British-American</li>
           <li>Cryptographer</li>
           <li>Mathemetician</li>
-          <li>Scientist</li>
         </ul>
       </div>
     </div>
   </div>
 
+  <hr>
 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/V4V2bpZlqx8?start=72" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <div id="shiftedDemo">
+    <h2 style="text-decoration: underline;">Find "turing" in these samples</h2>
+    <h2>Examples of Ones We Can Rule Out:</h2>
+    <div class="shiftingExample">
+      <table>
+        <tr>
+          <td>p</td>
+          <td>t</td>
+          <td style="background-color: #F71735;">r</td>
+          <td>a</td>
+          <td>c</td>
+          <td>a</td>
+          <td>s</td>
+          <td>y</td>
+          <td>s</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td>t</td>
+          <td>u</td>
+          <td style="background-color: #F71735;">r</td>
+          <td>i</td>
+          <td>n</td>
+          <td>g</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="shiftingExample">
+      <table>
+        <tr>
+          <td>p</td>
+          <td style="background-color: #F71735;">t</td>
+          <td>r</td>
+          <td>a</td>
+          <td>c</td>
+          <td>a</td>
+          <td>s</td>
+          <td>y</td>
+          <td>s</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="background-color: #F71735;">t</td>
+          <td>u</td>
+          <td>r</td>
+          <td>i</td>
+          <td>n</td>
+          <td>g</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Examples of Possible Solutions:</h2>
+
+    <div class="shiftingExample">
+      <table>
+        <tr>
+          <td>p</td>
+          <td>t</td>
+          <td>r</td>
+          <td>a</td>
+          <td>c</td>
+          <td>a</td>
+          <td>s</td>
+          <td>y</td>
+          <td>s</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>t</td>
+          <td>u</td>
+          <td>r</td>
+          <td>i</td>
+          <td>n</td>
+          <td>g</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="shiftingExample">
+      <table>
+        <tr>
+          <td>p</td>
+          <td>t</td>
+          <td>r</td>
+          <td>a</td>
+          <td>c</td>
+          <td>a</td>
+          <td>s</td>
+          <td>y</td>
+          <td>s</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>t</td>
+          <td>u</td>
+          <td>r</td>
+          <td>i</td>
+          <td>n</td>
+          <td>g</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="shiftingExample">
+      <table>
+        <tr>
+          <td>p</td>
+          <td>t</td>
+          <td>r</td>
+          <td>a</td>
+          <td>c</td>
+          <td>a</td>
+          <td>s</td>
+          <td>y</td>
+          <td>s</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>t</td>
+          <td>u</td>
+          <td>r</td>
+          <td>i</td>
+          <td>n</td>
+          <td>g</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="biography">
+    <img src="enigmaPlugboard.jpg" class="bombeProfile">
+    <div class="factsL bombeProfile">
+      <p>The plugboard would now be the final part to the puzzle in cracking the Enigma.</p>
+      <ul>
+        <li>There could be a maximum of switched characters from the plugboard</li>
+        <li>The British would need a machine that could try all possible combinations on the plugboard</li>
+        <li>That machine would also have to run through a series of rotors to undo the message from the Enigma</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="biography">
+    <img src="bombeRotors.jpg" class="bombeProfile">
+    <div class="factsR bombeProfile">
+      <p>A large machine which would be loud and had many different drums on it. Effectively, they made a bunch of Enigmas which would run at the same time backwards to make sense of an encrypted message.</p>
+      <ul>
+        <li>Could crack the Enigma in about 20 minutes</li>
+        <li>Essentially was a bunch of Enigmas spitting out possible translations of an encrypted message</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="biography">
+    <img src="navalBombe.jpg" class="bombeProfile">
+    <div class="factsR bombeProfile">
+      <p>Americans and the British were close allies in World War 2, so Alan Turing went to the US to develop a naval enigma for the US to combat Germany's navy. Their navy was much more cunning due to Admiral Karl Dönitz. Dönitz had long been suspicious that allies had already cracked the army and airforce enigma.</p>
+      <ul>
+        <li>Turing went to the states to work on a bombe that could crack Germany's naval enigma</li>
+        <li>Naval enigmas had 8, instead of 5, possible rotors to pick from</li>
+        <li>They also didn't use paper instructions</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
 
 </div>
 <% } %>

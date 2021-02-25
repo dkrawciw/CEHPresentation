@@ -68,7 +68,7 @@ function incrementRotors(num)
 }
 
 inp.addEventListener('keydown', (x) => {
-  if (x.key != 'Backspace' && x.key != ' ')
+  if (x.key != 'Backspace')
   {
     if (shiftCharacter(x.key.toLowerCase()) == x.key)
     {
@@ -80,8 +80,6 @@ inp.addEventListener('keydown', (x) => {
     changeKeyColor(shiftedCharacter.toUpperCase(), 'white');
     setTimeout(() => {changeKeyColor(shiftedCharacter.toUpperCase(), '')}, 300);
   }
-  else if(x.key == ' ')
-    oup.value += ' ';
   else
   {
     if (oup.value.length > 0)
